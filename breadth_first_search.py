@@ -5,6 +5,7 @@ class Node():
         self.element = data
         self.children = []
 
+#O(n+m)
 def breadth_first_search(nodes, start : Node):
     visited = {}
     for node in nodes:

@@ -6,6 +6,7 @@ class Node():
         self.left = left
         self.right = right
 
+#O(n)
 def preorder_traversal(start : Node):
     visited = []
     def recur(node: Node):

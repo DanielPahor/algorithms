@@ -6,6 +6,7 @@ class Node():
         self.left = left
         self.right = right
 
+#O(n)
 def inorder_traversal(start : Node):
     visited = []
     def recur(node: Node):
@@ -22,7 +23,7 @@ def inorder_traversal(start : Node):
 class Test(unittest.TestCase):
     def test_simple(self):
         head = Node('a', Node('b', Node('d'), Node('e')), Node('c', Node('f', Node('g', None, Node('h')))))
-        orderVisited = inorder_traversal(head)
+        visited = inorder_traversal(head)
 
         self.assertEqual(orderVisited[0], 'd')
         self.assertEqual(orderVisited[1], 'b')

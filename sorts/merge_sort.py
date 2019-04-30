@@ -12,7 +12,6 @@ def merge_sort(items):
 
     return merge(left_merged, right_merged)
 
-#O(n)
 def merge(items_left, items_right):
     i = j = 0
     merged = []
